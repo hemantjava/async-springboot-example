@@ -18,7 +18,7 @@ public class AsyncConfig implements AsyncConfigurer {
   private AsyncExceptionHandler asyncExceptionHandler;
 
 
-  //Aplication level
+  //Application level overriden method
   @Override
   public Executor getAsyncExecutor() {
     ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();
