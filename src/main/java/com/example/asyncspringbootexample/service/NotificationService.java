@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class NotificationService {
 
-  @Async
+  @Async("asyncExecutor")
   public void msgAsync() {
     log.info("thread:"+Thread.currentThread().getName());
     try {
